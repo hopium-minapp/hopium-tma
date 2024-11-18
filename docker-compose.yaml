@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  hopium-tma:
+    image: hopium-tma
+    build: .
+    restart: always
+    ports:
+      - '127.0.0.1:${PORT:-6001}:80'
